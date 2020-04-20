@@ -1,0 +1,25 @@
+os: linux
+dist: xenial
+
+language: elixir
+elixir: '1.9.1'
+otp_release: '22.0'
+
+install: 
+  - mix local.rebar --force; mix local.hex --force; mix deps.get --only prod; 
+  - npm i -g webpack webpack-cli
+
+services:
+  - postgresql
+
+notifications:
+  email:
+    if: branch = master
+
+branches:
+  only:
+    - master
+    - develop
+    - staging
+    - /^release-.*$/
+    - /^hotfix-.*$/

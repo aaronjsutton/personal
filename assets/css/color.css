@@ -1,5 +1,5 @@
 :root {
-  --black: #000;
+  --black: #1c1c1c;
   --white: #fff;
   --primary: var(--red);
   --red: #cb1a03;
@@ -41,6 +41,7 @@
 @media only screen and (prefers-color-scheme: dark) {
   :root {
     --black: #fff;
-    --white: #000;
+    --white: #1c1c1c;
+    --red: #d62d02;
   }
 }

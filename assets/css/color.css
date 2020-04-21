@@ -1,0 +1,36 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --red: salmon;
+}
+
+.bg-black {
+  background: var(--black);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.bg-red {
+  background: var(--red);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root {
+    --black: #fff;
+    --white: #000;
+  }
+}

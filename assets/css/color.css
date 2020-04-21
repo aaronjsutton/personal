@@ -1,7 +1,10 @@
 :root {
   --black: #000;
   --white: #fff;
+  --primary: var(--gold);
   --red: salmon;
+  --gold: gold;
+  --blue: blue;
 }
 
 .bg-black {
@@ -12,8 +15,20 @@
   background: var(--white);
 }
 
+.bg-primary {
+  background: var(--primary);  
+}
+
 .bg-red {
   background: var(--red);
+}
+
+.bg-gold {
+  background: var(--gold);
+}
+
+.bg-blue {
+  background: var(--blue);
 }
 
 .text-black {
@@ -22,6 +37,10 @@
 
 .text-white {
   color: var(--white);
+}
+
+.text-primary {
+  color: var(--primary);
 }
 
 .text-red {

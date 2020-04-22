@@ -21,6 +21,10 @@
   background: var(--red);
 }
 
+.logo {
+  background-image: url("/static/images/logo.png");
+  background-size: contain;
+}
 
 .text-black {
   color: var(--black);
@@ -43,5 +47,9 @@
     --black: #fff;
     --white: #1c1c1c;
     --red: #d62d02;
+  }
+
+  .logo {
+    background-image: url("/static/images/logo-d.png");
   }
 }

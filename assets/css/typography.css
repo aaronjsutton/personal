@@ -49,3 +49,37 @@ h6 {
   letter-spacing: 0;
   line-height: 1.5;
 }
+
+.text-left {
+  text-align: left;
+}
+
+.text-center	{
+  text-align: center;
+}
+
+.text-right	{
+  text-align: right;
+}
+
+.text-justify	{
+  text-align: justify;
+}
+
+@media screen and (min-width: 544px) {
+  .md-text-left {
+    text-align: left;
+  }
+
+  .md-text-center	{
+    text-align: center;
+  }
+
+  .md-text-right	{
+    text-align: right;
+  }
+
+  .md-text-justify	{
+    text-align: justify;
+  }
+}

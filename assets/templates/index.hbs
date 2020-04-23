@@ -10,8 +10,8 @@
 
       {{> header }}
 
-      <article class="py-6 max-w-screen-lg mx-auto">
-        <div class="md-flex items-center text-center md-text-left">
+      <div class="mx-auto max-w-screen-lg">
+        <div class="md-flex items-center text-center md-text-left mb-6">
           <div>
             <h1 class="text-center md-text-left"><strong>Web Developer and Stage Lighting Designer</strong></h1>
             <span class="w-40 h-4 mb-4 bg-red hidden md-block"></span>
@@ -31,7 +31,41 @@
           src="/images/headshot.png">
         </div>
 
-      </article>
+        <hr class="border-gray max-w-2xl mt-4 mb-6">
+        
+        <article class="mb-4">
+          <div class="text-center">
+            <h2>My Latest Projects</h2>
+            <p class="font-serif">Includes recent and current.</p>
+          </div>
+
+          <hr class="border-gray max-w-2xl mt-6 mb-6">
+
+          <div class="md-flex flex-row-reverse items-center">
+            <div class="">
+              <p class="mb-1 text-red font-small"><b>LIGHTING DESIGN</b></p>
+              <h2>Demidov Dance Annual Showcase</h2>
+              <p class="font-serif">Dance portrays emotion, and so does the lighting that surrounds it.
+              When Demidov Dance hosted their showcase, I transformed the University of Pittsburgh Alumni Hall
+              into a vibrant and energetic dancefloor.
+              </p>
+              <span class="w-40 h-4 mb-4 bg-red hidden md-block"></span>
+            </div>
+
+            <div class="md-mr-6 text-center">
+              <img class="shadow border-8 border-white border-solid"
+                   src="/images/events/demidov.jpeg">
+              <hr class="inline-block border-gray w-half my-4">
+              <img class="shadow border-8 border-white border-solid"
+                   src="/images/events/spotlights.jpeg">
+            </div>
+
+          </div>
+
+        </article>
+      </div>
     </main>
+
+    {{> footer }}
   </body>
 </html>

@@ -65,6 +65,14 @@
   width: 14rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-half {
+  width: 50%;
+}
+
 .h-0	{
   height: 0;
 }

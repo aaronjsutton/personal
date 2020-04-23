@@ -157,6 +157,34 @@
   max-width: 42rem;
 }
 
+.max-w-3xl	{
+  max-width: 50rem;
+}
+
+.max-h-xs	{
+  max-height: 20rem;
+}
+
+.max-h-sm	{
+  max-height: 24rem;
+}
+
+.max-h-md	{
+  max-height: 28rem;
+}
+
+.max-h-lg	{
+  max-height: 32rem;
+}
+
+.max-h-xl	{
+  max-height: 36rem;
+}
+
+.max-h-2xl	{
+  max-height: 42rem;
+}
+
 .max-w-screen-md	{
   max-width: 768px;
 }

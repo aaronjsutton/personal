@@ -66,6 +66,10 @@ h6 {
   text-align: justify;
 }
 
+.font-small {
+  font-size: 1.4rem;
+}
+
 .font-serif {
   font-family: 'Libre Baskerville', serif;
 }

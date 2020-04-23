@@ -66,6 +66,10 @@ h6 {
   text-align: justify;
 }
 
+.font-serif {
+  font-family: 'Libre Baskerville', serif;
+}
+
 @media screen and (min-width: 544px) {
   .md-text-left {
     text-align: left;

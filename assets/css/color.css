@@ -22,7 +22,7 @@
 }
 
 .logo {
-  background-image: url("/static/images/logo.png");
+  background-image: url("/images/logo.png");
   background-size: contain;
 }
 
@@ -50,6 +50,6 @@
   }
 
   .logo {
-    background-image: url("/static/images/logo-d.png");
+    background-image: url("/images/logo-d.png");
   }
 }

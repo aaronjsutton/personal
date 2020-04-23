@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <title>Aaron Sutton &ndash; Tagline </title>
-  </head>
+
+  {{> head title="Aaron Sutton &ndash; Tagline" }}
 
   <body class="bg-white">
     <main class="px-4 md-px-6">
@@ -13,14 +11,26 @@
       {{> header }}
 
       <article class="py-6 max-w-screen-lg mx-auto">
-        <div class="md-flex items-center text-center">
+        <div class="md-flex items-center text-center md-text-left">
           <div>
             <h1 class="text-center md-text-left"><strong>Web Developer and Stage Lighting Designer</strong></h1>
-            <span class="w-40 h-4 bg-red hidden md-block"></span>
+            <span class="w-40 h-4 mb-4 bg-red hidden md-block"></span>
+
+            <article class="md-px-4 font-serif">
+              <p>Owning a professional a website shouldn&rsquo;t be an afterthought.
+              I seek to build websites that don&rsquo;t just fit your needs visually,
+              but are also <strong>tailored to solving your problems</strong> in an online world.</p>
+
+              <p>When not programming, I&rsquo;m behind the lighting console.
+              I focus on creating high-quality lighting designs with creative vision at the core, 
+              so that you can increase <strong>expression through illumination.</strong></p>
+
+            </article>
           </div>
           <img class="md-ml-4 shadow border-8 border-white border-solid max-w-xl" 
           src="/images/headshot.png">
         </div>
+
       </article>
     </main>
   </body>

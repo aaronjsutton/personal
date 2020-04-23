@@ -32,13 +32,20 @@ module.exports = (env, options) => ({
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
-      }
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader',
+        options: {
+          partialDirs: [path.join(__dirname, 'templates', 'partials')]
+        }
+      },
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "../index.html", 
-      template: "static/index.html",
+      template: "templates/index.hbs",
     }),
     new MiniCssExtractPlugin({ filename: '../css/app.css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }])

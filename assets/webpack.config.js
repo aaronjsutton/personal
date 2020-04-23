@@ -36,7 +36,10 @@ module.exports = (env, options) => ({
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({filename: "../index.html", template: "static/index.html"}),
+    new HtmlWebpackPlugin({
+      filename: "../index.html", 
+      template: "static/index.html",
+    }),
     new MiniCssExtractPlugin({ filename: '../css/app.css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }])
   ]

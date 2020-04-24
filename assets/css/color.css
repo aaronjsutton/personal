@@ -39,7 +39,12 @@
   color: var(--primary);
 }
 
-.text-red {
+.text-red,
+#js-nav-current {
+  color: var(--red);
+}
+
+.hover-text-red:hover {
   color: var(--red);
 }
 

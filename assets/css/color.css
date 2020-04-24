@@ -46,6 +46,7 @@
 @media only screen and (prefers-color-scheme: dark) {
   :root {
     --black: #fff;
+    --gray: #525252;
     --white: #1c1c1c;
     --red: #d62d02;
   }

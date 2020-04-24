@@ -1,0 +1,16 @@
+.btn {
+  border: .2rem solid var(--black);
+  color: var(--black);
+  display: inline-block;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  transition-property: border, color, transform;
+  transition-duration: 220ms;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+  border-color: var(--red);
+  color: var(--red);
+  transform: translateY(-.2rem);
+}

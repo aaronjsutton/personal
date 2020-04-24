@@ -47,6 +47,11 @@ module.exports = (env, options) => ({
       filename: "../index.html", 
       template: "templates/index.hbs",
     }),
+
+    new HtmlWebpackPlugin({
+      filename: "../about.html", 
+      template: "templates/about.hbs",
+    }),
     new MiniCssExtractPlugin({ filename: '../css/app.css' }),
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }])
   ]

@@ -1,0 +1,27 @@
+.duration-120 {
+  transition-duration: 120ms;
+}
+
+.duration-240 {
+  transition-duration: 240ms;
+}
+
+.duration-480 {
+  transition-duration: 480ms;
+}
+
+.transition-colors {
+  transition-property: color, background, border-color;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease {
+  transition-timing-function: ease;
+}

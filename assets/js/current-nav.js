@@ -2,7 +2,7 @@
  * Applies the `js-nav-current` id to the child in element.
  */
 export default function highlight(parentElement) {
-  const navId = document.querySelector("[data-nav-id]").dataset.navId
+  const navId = document.querySelector("[data-nav-id]").dataset.navId || ""
   const navElement = findElementByInnerText(parentElement, navId, toSnakeCase)
 
   if (navElement) {
@@ -16,6 +16,6 @@ function findElementByInnerText(parentElement, text, f) {
   })
 }
 
-function toSnakeCase(element) {
-  return element.toLowerCase().replace(" ", "-")
+function toSnakeCase(text) {
+  return text.toLowerCase().replace(" ", "-")
 }

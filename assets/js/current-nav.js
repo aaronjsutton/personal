@@ -12,7 +12,7 @@ export default function highlight(parentElement) {
 
 function findElementByInnerText(parentElement, text, f) {
   return Array.from(parentElement.children).find(element => {
-    return text === f(element.lastChild.innerText)
+    return text === f(element.lastElementChild.innerText)
   })
 }
 

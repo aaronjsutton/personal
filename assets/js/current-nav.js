@@ -2,7 +2,8 @@
  * Applies the `js-nav-current` id to the child in element.
  */
 export default function highlight(parentElement) {
-  const navElement = findElementByInnerText(parentElement, document.body.id, toSnakeCase)
+  const navId = document.querySelector("[data-nav-id]").dataset.navId
+  const navElement = findElementByInnerText(parentElement, navId, toSnakeCase)
 
   if (navElement) {
     navElement.lastChild.id = "js-nav-current"

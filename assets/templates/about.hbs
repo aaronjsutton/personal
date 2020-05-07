@@ -11,8 +11,34 @@
       {{> header }}
 
       <div class="mx-auto max-w-screen-lg mt-6">
-        <h1>About me</h1>
-        <p class="font-serif">My name is Aaron Sutton.</p>
+        <div class="md-grid grid-cols-2 gap-2">
+          <article class="mb-2 md-mb-0 p-3">
+            <p class="mb-1 text-red"><b>Hey there, my name is...</b></p>
+            <h2>Aaron Sutton</h2>
+          </article>
+
+          <article class="slide-in-right duration-480 delay-960 ease mb-2 md-mb-0 border-solid border-2 border-black shadow-sm p-3">
+            <p class="mb-1 text-red"><b>I&rsquo;m from...</b></p>
+            <p class="font-serif">Pittsburgh, Pennsylvania</p>
+          </article>
+
+          <article class="slide-in-left duration-480 delay-840 ease mb-2 md-mb-0 border-solid border-2 border-black shadow-sm p-3">
+            <p class="mb-1 text-red"><b>I can...</b></p>
+            <p class="font-serif">Build your custom website <b class="font-sans inline text-red">or</b>
+            <br>Light your next concert, show, or other event.</p>
+          </article>
+
+          <article class="slide-in-right duration-480 delay-720 ease mb-2 md-mb-0 border-solid border-2 border-black shadow-sm p-3">
+            <p class="mb-1 text-red"><b>I also offer...</b></p>
+            <ul class="font-serif">
+              <li>Website hosting and maintenance services.</li>
+              <li>Graphic design for the web.</li>
+              <li>Website redesign and consultation.</li>
+              <li>Live sound and recording services.</li>
+            </ul>
+          </article>
+        </div>
+
       </div>
 
       {{> footer }}

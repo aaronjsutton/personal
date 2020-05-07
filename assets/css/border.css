@@ -10,6 +10,10 @@
   box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.2);
 }
 
+.border-black {
+  border-color: black;
+}
+
 .border-white {
   border-color: white;
 }

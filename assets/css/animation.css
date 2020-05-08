@@ -1,4 +1,4 @@
-@keyframes opacity-0-1 {
+@keyframes opacity-1-0 {
   from {
     opacity: 0;
   }
@@ -15,19 +15,8 @@
 }
 
 .blink {
-  animation-name: opacity-0-1;
-}
-
-.slide-in-left {
-  animation-name: translate-x-0;
-  animation-fill-mode: forwards;
-  transform: translateX(-50vw);
-}
-
-.slide-in-right {
-  animation-name: translate-x-0;
-  animation-fill-mode: forwards;
-  transform: translateX(50vw);
+  animation-name: opacity-1-0;
+  animation-fill-mode: backwards;
 }
 
 .count-1 {
@@ -84,4 +73,18 @@
 
 .delay-1200 {
   animation-delay: 1200ms;
+}
+
+@media screen and (min-width: 736px) {
+  .md-slide-in-left {
+    animation-name: translate-x-0;
+    animation-fill-mode: forwards;
+    transform: translateX(-100vw);
+  }
+
+  .md-slide-in-right {
+    animation-name: translate-x-0;
+    animation-fill-mode: forwards;
+    transform: translateX(100vw);
+  }
 }

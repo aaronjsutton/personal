@@ -4,6 +4,9 @@
   --white: #fff;
   --primary: var(--red);
   --red: #cb1a03;
+  --magenta: #d100ff;
+  --cyan: #00d5f7;
+  --yellow: #eeb715;
 }
 
 .bg-black {
@@ -16,6 +19,18 @@
 
 .bg-primary {
   background: var(--primary);  
+}
+
+.bg-magenta {
+  background: var(--magenta);
+}
+
+.bg-cyan {
+  background: var(--cyan);
+}
+
+.bg-yellow {
+  background: var(--yellow);
 }
 
 .bg-red {
@@ -54,6 +69,9 @@
     --gray: #525252;
     --white: #1c1c1c;
     --red: #d62d02;
+    --magenta: #d100ff;
+    --cyan: #00d5f7;
+    --yellow: #e9e806;
   }
 
   .logo {

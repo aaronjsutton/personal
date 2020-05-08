@@ -78,6 +78,10 @@ h6 {
   font-family: 'Libre Baskerville', serif;
 }
 
+.font-sans {
+  font-family: 'Source Sans Pro', 'Helveitca Neue', 'Helvetica', Arial, sans-serif;
+}
+
 .list-none {
   list-style: none;
 }

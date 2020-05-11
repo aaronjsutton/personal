@@ -74,6 +74,10 @@
     --yellow: #e9e806;
   }
 
+  .text-white-invert {
+    color: var(--black);
+  }
+
   .logo {
     background-image: url("/images/logo-d.png");
   }

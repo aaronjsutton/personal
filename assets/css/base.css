@@ -20,6 +20,11 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
 }
@@ -27,4 +32,3 @@ img {
 hr {
   border-style: solid;
 }
-

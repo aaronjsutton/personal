@@ -6,10 +6,6 @@ p {
   margin-top: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -80,6 +76,14 @@ h6 {
 
 .font-sans {
   font-family: 'Source Sans Pro', 'Helveitca Neue', 'Helvetica', Arial, sans-serif;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .list-none {

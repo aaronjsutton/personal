@@ -65,12 +65,20 @@
   width: 14rem;
 }
 
-.w-full {
-  width: 100%;
+.w-quarter {
+  width: 25%;
 }
 
 .w-half {
   width: 50%;
+}
+
+.w-three-quarter {
+  width: 75%;  
+}
+
+.w-full {
+  width: 100%;
 }
 
 .h-0	{

@@ -17,5 +17,7 @@ defmodule PersonalWeb.Router do
     pipe_through :browser
 
     get "/hire", ContactController, :new
+    post "/hire", ContactController, :create
+
   end
 end

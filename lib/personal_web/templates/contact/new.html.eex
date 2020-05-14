@@ -1,10 +1,38 @@
-<div data-nav-id="hire-me" class="relative mb-2">
+<div data-nav-id="hire-me" class="relative mb-4">
   <img src="/images/code-banner.png" class="shadow">
   <h1 class="absolute bottom-0 left-0 text-white text-white-invert pl-4 pb-4">
   <b>Let&rsquo;s Create<br/>Something Inpsiring</b></h1>
 </div>
 
 <section class="px-6">
-  <p class="w-three-quarter font-serif">I&rsquo;m always happy to talk about a new project. 
-  Shoot me an email using the form below and I'll get back to you right away!</p>
+  <p class="mb-3 w-three-quarter font-serif">
+    There&rsquo;s no one-size-fits-all website. I&rsquo;m always happy to talk about a new project. 
+    Shoot me an email using the form below and I&rsquo;ll get back to you right away!</p>
+
+  <%= form_for @conn, Routes.contact_path(@conn, :create), [as: :email], fn f -> %>
+
+    <div class="pb-4 relative max-w-md flex flex-col-reverse">
+      <%= text_input f, :address, class: "ipt", placeholder: "Email Address" %>
+      <%= label f, :subject, class: "lbl" do %>
+        <span class="duration-240 ease lbl-content">Email Address</span>
+      <% end %>
+    </div>
+
+    <div class="pb-4 relative max-w-md flex flex-col-reverse">
+      <%= text_input f, :subject, class: "ipt", placeholder: "Subject Line" %>
+      <%= label f, :subject, class: "lbl" do %>
+        <span class="duration-240 ease lbl-content">Subject Line</span>
+      <% end %>
+    </div>
+
+    <div class="mb-4 relative max-w-xl flex flex-col-reverse">
+      <%= textarea f, :body, class: "ipt", placeholder: "Your Message" %>
+      <%= label f, :subject, class: "lbl" do %>
+        <div class="duration-240 ease lbl-content">Your Message</div>
+      <% end %>
+    </div>
+
+    <%= submit "Send Message", class: "btn" %>
+  <% end %>
 </section>
+

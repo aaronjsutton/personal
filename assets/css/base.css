@@ -25,6 +25,12 @@ a {
   text-decoration: underline;
 }
 
+button {
+  background: var(--white);
+  font-family: 'Source Sans Pro', 'Helveitca Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
 img {
   max-width: 100%;
 }

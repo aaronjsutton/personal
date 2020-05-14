@@ -2,6 +2,10 @@
   flex-direction: column;
 }
 
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }

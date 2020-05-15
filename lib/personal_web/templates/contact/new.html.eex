@@ -9,24 +9,27 @@
     There&rsquo;s no one-size-fits-all website. I&rsquo;m always happy to talk about a new project. 
     Shoot me an email using the form below and I&rsquo;ll get back to you right away!</p>
 
+  <p class="text-center" role="alert"><%= get_flash(@conn, :info) %></p>
+  <p class="text-center text-red" role="alert"><%= get_flash(@conn, :error) %></p>
+
   <%= form_for @conn, Routes.contact_path(@conn, :create), [as: :email], fn f -> %>
 
     <div class="pb-4 relative max-w-md flex flex-col-reverse">
-      <%= text_input f, :address, class: "ipt", placeholder: "Email Address" %>
+      <%= text_input f, :address, required: true, class: "ipt", placeholder: "Email Address" %>
       <%= label f, :subject, class: "lbl" do %>
         <span class="duration-240 ease lbl-content">Email Address</span>
       <% end %>
     </div>
 
     <div class="pb-4 relative max-w-md flex flex-col-reverse">
-      <%= text_input f, :subject, class: "ipt", placeholder: "Subject Line" %>
+      <%= text_input f, :subject, required: true, class: "ipt", placeholder: "Subject Line" %>
       <%= label f, :subject, class: "lbl" do %>
         <span class="duration-240 ease lbl-content">Subject Line</span>
       <% end %>
     </div>
 
     <div class="mb-4 relative max-w-xl flex flex-col-reverse">
-      <%= textarea f, :body, class: "ipt", placeholder: "Your Message" %>
+      <%= textarea f, :body, class: "ipt", required: true, placeholder: "Your Message" %>
       <%= label f, :subject, class: "lbl" do %>
         <div class="duration-240 ease lbl-content">Your Message</div>
       <% end %>
@@ -35,4 +38,3 @@
     <%= submit "Send Message", class: "btn" %>
   <% end %>
 </section>
-

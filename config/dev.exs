@@ -1,5 +1,4 @@
 use Mix.Config
-
 # Configure your database
 config :personal, Personal.Repo,
   username: "postgres",
@@ -8,6 +7,10 @@ config :personal, Personal.Repo,
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
+
+# Mail send settings
+config :personal, Personal.Mailer,
+  api_key: System.get_env("SENDGRID_DEV_KEY") || ""
 
 # For development, we disable any cache and enable
 # debugging and code reloading.

@@ -21,7 +21,12 @@ defimpl Jason.Encoder, for: Personal.Email do
           type: "text/plain",
           value: value.body
         }
-      ]
+      ],
+      mail_settings: %{
+        sandbox_mode: %{
+          enable: true
+        }
+      }
     } |> Jason.Encode.map(opts)
   end
 end

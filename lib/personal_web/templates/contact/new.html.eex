@@ -1,10 +1,10 @@
 <div data-nav-id="hire-me" class="relative mb-4">
-  <img src="/images/code-banner.png" class="shadow">
+  <img src="/images/code-banner.png" class="max-h-2xl w-full object-cover shadow">
   <h1 class="absolute bottom-0 left-0 text-white text-white-invert pl-4 pb-4">
   <b>Let&rsquo;s Create<br/>Something Inpsiring</b></h1>
 </div>
 
-<section class="px-6">
+<section class="mb-6 px-6">
   <p class="mb-3 w-three-quarter font-serif">
     There&rsquo;s no one-size-fits-all website. I&rsquo;m always happy to talk about a new project. 
     Shoot me an email using the form below and I&rsquo;ll get back to you right away!</p>

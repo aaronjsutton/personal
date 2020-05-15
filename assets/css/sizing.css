@@ -213,3 +213,18 @@
   max-width: 1280px;
 }
 
+.resize-y {
+  resize: vertical;
+}
+
+.resize-x {
+  resize: horizontal;
+}
+
+.resize {
+  resize: both;
+}
+
+.resize-none {
+  resize: none;
+}

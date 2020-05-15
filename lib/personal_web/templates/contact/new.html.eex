@@ -28,10 +28,10 @@
       <% end %>
     </div>
 
-    <div class="mb-4 relative max-w-xl flex flex-col-reverse">
-      <%= textarea f, :body, class: "ipt", required: true, placeholder: "Your Message" %>
+    <div class="mb-4 relative max-w-2xl flex flex-col-reverse">
+      <%= textarea f, :body, class: "ipt h-56 resize-y", required: true, placeholder: "Your Message" %>
       <%= label f, :subject, class: "lbl" do %>
-        <div class="duration-240 ease lbl-content">Your Message</div>
+        <div class="duration-240 ease lbl-content bg-white">Your Message</div>
       <% end %>
     </div>
 

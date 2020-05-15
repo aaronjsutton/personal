@@ -1,5 +1,6 @@
 .ipt {
   display: block;
+  background: var(--white);
   border: .2rem solid var(--black);
   border-top: none;
   font-family: 'Source Sans Pro', 'Helveitca Neue', 'Helvetica', Arial, sans-serif;

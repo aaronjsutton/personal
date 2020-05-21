@@ -1,0 +1,84 @@
+:root {
+  --black: #1c1c1c;
+  --gray: #eee;
+  --white: #fff;
+  --primary: var(--red);
+  --red: #cb1a03;
+  --magenta: #d100ff;
+  --cyan: #00d5f7;
+  --yellow: #eeb715;
+}
+
+.bg-black {
+  background: var(--black);
+}
+
+.bg-white {
+  background: var(--white);
+}
+
+.bg-primary {
+  background: var(--primary);  
+}
+
+.bg-magenta {
+  background: var(--magenta);
+}
+
+.bg-cyan {
+  background: var(--cyan);
+}
+
+.bg-yellow {
+  background: var(--yellow);
+}
+
+.bg-red {
+  background: var(--red);
+}
+
+.logo {
+  background-image: url("/images/logo.png");
+  background-size: contain;
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-red,
+#js-nav-current {
+  color: var(--red);
+}
+
+.hover-text-red:hover {
+  color: var(--red);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root {
+    --black: #fff;
+    --gray: #525252;
+    --white: #1c1c1c;
+    --red: #d62d02;
+    --magenta: #d100ff;
+    --cyan: #00d5f7;
+    --yellow: #e9e806;
+  }
+
+  .text-white-invert {
+    color: var(--black);
+  }
+
+  .logo {
+    background-image: url("/images/logo-d.png");
+  }
+}

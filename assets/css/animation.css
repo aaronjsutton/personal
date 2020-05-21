@@ -1,0 +1,90 @@
+@keyframes opacity-1-0 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translate-x-0 {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.blink {
+  animation-name: opacity-1-0;
+  animation-fill-mode: backwards;
+}
+
+.count-1 {
+  animation-iteration-count: 1;
+}
+
+.count-2 {
+  animation-iteration-count: 2;
+}
+
+.count-3 {
+  animation-iteration-count: 3;
+}
+
+.count-4 {
+  animation-iteration-count: 4;
+}
+
+.count-5 {
+  animation-iteration-count: 5;
+}
+
+.count-6 {
+  animation-iteration-count: 6;
+}
+
+.delay-120 {
+  animation-delay: 120ms;
+}
+
+.delay-240 {
+  animation-delay: 240ms;
+}
+
+.delay-480 {
+  animation-delay: 480ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-720 {
+  animation-delay: 720ms;
+}
+
+.delay-840 {
+  animation-delay: 840ms;
+}
+
+.delay-960 {
+  animation-delay: 960ms;
+}
+
+.delay-1200 {
+  animation-delay: 1200ms;
+}
+
+@media screen and (min-width: 736px) {
+  .md-slide-in-left {
+    animation-name: translate-x-0;
+    animation-fill-mode: forwards;
+    transform: translateX(-100vw);
+  }
+
+  .md-slide-in-right {
+    animation-name: translate-x-0;
+    animation-fill-mode: forwards;
+    transform: translateX(100vw);
+  }
+}

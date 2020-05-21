@@ -1,3 +1,18 @@
 /* This file is for your main application css. */
 
-@import "./phoenix.css";
+@import "animation.css";
+@import "base.css";
+@import "border.css";
+@import "button.css";
+@import "color.css";
+@import "effects.css";
+@import "flexbox.css";
+@import "form.css";
+@import "grid.css";
+@import "margin.css";
+@import "layout.css";
+@import "padding.css";
+@import "object.css";
+@import "transition.css";
+@import "typography.css";
+@import "sizing.css";

@@ -1,0 +1,67 @@
+.ipt {
+  display: block;
+  background: var(--white);
+  border: .2rem solid var(--black);
+  border-top: none;
+  font-family: 'Source Sans Pro', 'Helveitca Neue', 'Helvetica', Arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.4rem;
+  margin: 0;
+}
+
+.ipt:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.ipt:focus + .lbl {
+  color: var(--red);
+}
+
+.lbl {
+  align-items: center;
+  display: flex;
+
+  white-space: nowrap;
+  position: absolute;
+  top: -1.2rem;
+  width: 100%;
+}
+
+.lbl:before {
+  background: var(--black);
+  content: '';
+  height: .2rem;
+  width: 6rem;
+}
+
+.ipt:focus + .lbl:before {
+  margin-right: .5rem;
+}
+
+.lbl:after {
+  background: var(--black);
+  content: '';
+  height: .2rem;
+  width: 100%;
+}
+
+.ipt:focus + .lbl:after {
+  margin-left: .5rem;
+}
+
+.ipt:focus + .lbl:before, 
+.ipt:focus + .lbl:after {
+  background: var(--red); 
+}
+
+.lbl-content {
+  max-width: 0;
+  opacity: 0;
+  transition-property: min-width, width, max-width, opacity;
+}
+
+.ipt:focus + .lbl > .lbl-content {
+  max-width: 10rem;
+  opacity: 1;
+}

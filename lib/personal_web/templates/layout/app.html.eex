@@ -4,26 +4,31 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title><%= assigns[:page_title] || "Personal · Phoenix Framework" %></title>
+    <title><%= assigns[:page_title] || "Aaron Sutton" %></title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <%= csrf_meta_tag() %>
   </head>
-  <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
+
+  <body class="bg-white">
+    <header class="md-px-6 py-4 flex items-center justify-between">
+      <a href="/"><div class="logo h-40 w-40"></div></a>
+
+      <b>
+        <ul id="js-nav-highlight" class="md-flex list-none">
+          <li class="px-4"><a class="text-black no-underline hover-text-red 
+          transition-colors ease duration-120" href="/">Home</a></li>
+          <li class="px-4"><a class="text-black no-underline hover-text-red 
+          transition-colors ease duration-120" href="/about.html">About</a></li>
+          <li class="px-4"><a class="text-black no-underline hover-text-red 
+          transition-colors ease duration-120" href="/hire.html">Hire Me</a></li>
+          <li class="px-4"><a class="text-black no-underline hover-text-red 
+          transition-colors ease duration-120" href="/">The Blog</a></li>
+        </ul>
+      </b>
     </header>
-    <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <main role="main" class="">
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>

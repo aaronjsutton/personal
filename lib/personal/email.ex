@@ -11,20 +11,24 @@ defimpl Jason.Encoder, for: Personal.Email do
     %{
       personalizations: [
         %{
-          email: value.address
+          to: [
+            %{
+              email: "aaron@aaronjsutton.com"
+            }
+          ]
         }
       ],
       subject: value.subject,
-      from: "contact@aaronjsutton.com",
+      from: %{email: "contact@aaronjsutton.com", name: "Contact Form Agent"},
       content: [
         %{
           type: "text/plain",
-          value: value.body
+          value: value.body <> " -- #{value.address}"
         }
       ],
       mail_settings: %{
         sandbox_mode: %{
-          enable: true
+          enable: false
         }
       }
     } |> Jason.Encode.map(opts)

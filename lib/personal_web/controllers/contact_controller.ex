@@ -8,7 +8,7 @@ defmodule PersonalWeb.ContactController do
   def create(conn, %{"email" => params}) do
     email = Personal.Email.cast(params)
     case Personal.Mailer.send(email) do
-      {:ok, :queued} ->
+      {:ok, 202} ->
         conn
         put_flash(conn, :info, "Your email has been sent.")
       {:error, error} ->

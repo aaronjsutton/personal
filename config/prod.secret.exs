@@ -23,6 +23,15 @@ secret_key_base =
     You can generate one by calling: mix phx.gen.secret
     """
 
+sendgrid_api_key =
+  System.get_env("SENDGRID_API_KEY") ||
+    raise """
+    environment variable SENDGRID_API_KEY is missing.
+    """
+
+config :personal, Personal.Mailer,
+  api_key: sendgrid_api_key
+
 config :personal, PersonalWeb.Endpoint,
   http: [
     port: String.to_integer(System.get_env("PORT") || "4000"),

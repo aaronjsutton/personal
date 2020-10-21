@@ -11,6 +11,7 @@ defmodule PersonalWeb.ContactController do
       {:ok, 202} ->
         conn
         put_flash(conn, :info, "Your email has been sent.")
+      {:ok, _} -> conn
       {:error, error} ->
         put_flash(conn, :info, "#{error}. Please try again later 
           or email direct to aaron@aaronjsutton.com")
